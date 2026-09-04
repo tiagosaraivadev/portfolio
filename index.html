@@ -1,110 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tiago Saraiva — Portfólio</title>
-  <meta name="description" content="Portfólio profissional de Tiago Saraiva, desenvolvedor back-end." />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiago Saraiva — Portfólio</title>
+    <meta
+      name="description"
+      content="Portfólio profissional de Tiago Saraiva, Engenheiro de Software especialista em .NET Core e ReactJS."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="logo">Tiago<span>.dev</span></a>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">Tiago<span>.dev</span></a>
+        <button
+          class="nav-toggle"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
 
-      <button class="nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="main-nav" aria-label="Navegação principal">
-        <ul>
-          <li><a href="index.html">Sobre Mim</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="experiencias.html">Experiências</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="page-header container">
-      <h1>Sobre Mim</h1>
-      <p>Um pouco da minha trajetória, formação e objetivos profissionais.</p>
-
-      <div class="lang-toggle" role="group" aria-label="Selecionar idioma">
-        <button data-lang-btn="pt" class="active" type="button">PT</button>
-        <button data-lang-btn="en" type="button">EN</button>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="experiencias.html">Experiências</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section class="section container">
-      <div class="card about-grid">
+    <main>
+      <section class="page-header container">
+        <h1>Sobre Mim</h1>
+        <p>Um pouco da minha trajetória, formação e objetivos profissionais.</p>
 
-        <div data-lang-content="pt">
-          <p>
-            Olá! Eu sou o <strong>Tiago Saraiva</strong>, estudante de Engenharia de Software
-            na PUC Minas, com foco em desenvolvimento <strong>back-end</strong>. Gosto de
-            trabalhar com arquitetura de sistemas, APIs e bancos de dados, e estou expandindo
-            meus conhecimentos em front-end para construir produtos completos, do banco de
-            dados à interface do usuário.
-          </p>
-          <p>
-            Tenho interesse em boas práticas de engenharia de software, automação e na
-            construção de soluções que resolvam problemas reais. Este portfólio reúne os
-            projetos, experiências e formas de contato para quem quiser conhecer meu trabalho.
-          </p>
+        <div class="lang-toggle" role="group" aria-label="Selecionar idioma">
+          <button data-lang-btn="pt" class="active" type="button">PT</button>
+          <button data-lang-btn="en" type="button">EN</button>
         </div>
+      </section>
 
-        <div data-lang-content="en">
-          <p>
-            Hi! I'm <strong>Tiago Saraiva</strong>, a Software Engineering student at PUC
-            Minas, focused on <strong>back-end</strong> development. I enjoy working with
-            system architecture, APIs and databases, and I'm expanding my front-end skills
-            to build complete products, from the database to the user interface.
-          </p>
-          <p>
-            I'm interested in good software engineering practices, automation, and building
-            solutions that solve real problems. This portfolio gathers my projects,
-            experiences and contact information for anyone who wants to know more about my work.
-          </p>
+      <section class="section container">
+        <div class="card about-grid">
+          <div data-lang-content="pt">
+            <p>
+              Olá! Eu sou o <strong>Tiago Saraiva</strong>, Engenheiro de
+              Software Pleno atualmente na <strong>Wabtec Corporation</strong>,
+              com sólida experiência no desenvolvimento de sistemas distribuídos
+              e aplicações web de alta escala. Sou especialista no ecossistema
+              <strong>.NET Core</strong>, com foco na criação de microsserviços
+              e APIs REST integrados a interfaces modernas em ReactJS.
+            </p>
+            <p>
+              Tenho domínio em SQL Server, com ênfase em modelagem relacional e
+              otimização de performance, além de experiência em ambientes ágeis
+              e cultura DevOps, gerenciando pipelines de CI/CD via Azure DevOps.
+              Também curso Engenharia de Software na PUC Minas, e este portfólio
+              reúne meus projetos, experiências e formas de contato.
+            </p>
+          </div>
+
+          <div data-lang-content="en">
+            <p>
+              Hi! I'm <strong>Tiago Saraiva</strong>, a Mid-level Software
+              Engineer currently at <strong>Wabtec Corporation</strong>, with
+              solid experience building distributed systems and high-scale web
+              applications. I specialize in the
+              <strong>.NET Core</strong> ecosystem, focused on building
+              microservices and REST APIs integrated with modern ReactJS
+              interfaces.
+            </p>
+            <p>
+              I have strong SQL Server skills, with an emphasis on relational
+              modeling and performance optimization, along with experience in
+              agile environments and DevOps culture, managing CI/CD pipelines
+              through Azure DevOps. I'm also studying Software Engineering at
+              PUC Minas, and this portfolio gathers my projects, experience and
+              contact information.
+            </p>
+          </div>
+
+          <div class="about-facts">
+            <div class="fact">
+              <strong>Formação</strong>
+              Engenharia de Software — PUC Minas (2022–2027)
+            </div>
+            <div class="fact">
+              <strong>Área de atuação</strong>
+              Engenheiro de Software Pleno — .NET Core &amp; ReactJS
+            </div>
+            <div class="fact">
+              <strong>Interesses</strong>
+              Sistemas distribuídos, microsserviços, APIs REST
+            </div>
+            <div class="fact">
+              <strong>Objetivo</strong>
+              Evoluir como Engenheiro de Software, aprofundando atuação em
+              arquitetura de sistemas distribuídos
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <div class="about-facts">
-          <div class="fact">
-            <strong>Formação</strong>
-            Engenharia de Software — PUC Minas
-          </div>
-          <div class="fact">
-            <strong>Área de atuação</strong>
-            Desenvolvimento Back-end
-          </div>
-          <div class="fact">
-            <strong>Interesses</strong>
-            Arquitetura de sistemas, APIs, automação
-          </div>
-          <div class="fact">
-            <strong>Objetivo</strong>
-            Atuar como desenvolvedor full-stack
-          </div>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>&copy; 2026 Tiago Saraiva. Todos os direitos reservados.</span>
+        <div class="footer-social">
+          <a href="mailto:tiago.saraiva165@hotmail.com">E-mail</a>
+          <a
+            href="https://github.com/tiagosaraivadev"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/tiago-saraiva1"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
         </div>
-
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <span>&copy; 2026 Tiago Saraiva. Todos os direitos reservados.</span>
-      <div class="footer-social">
-        <a href="mailto:tiago.saraiva165@hotmail.com">E-mail</a>
-        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
