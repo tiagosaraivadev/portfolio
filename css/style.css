@@ -11,7 +11,7 @@
   --color-success: #4ade80;
   --color-danger: #f87171;
 
-  --font-base: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  --font-base: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
   --radius: 10px;
   --radius-lg: 16px;
   --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
@@ -130,7 +130,9 @@ ul {
   height: 2px;
   background: var(--color-text);
   border-radius: 2px;
-  transition: transform var(--transition), opacity var(--transition);
+  transition:
+    transform var(--transition),
+    opacity var(--transition);
 }
 
 .main-nav ul {
@@ -243,7 +245,9 @@ main {
   cursor: pointer;
   font-weight: 600;
   font-size: 0.9rem;
-  transition: background var(--transition), color var(--transition);
+  transition:
+    background var(--transition),
+    color var(--transition);
 }
 
 .lang-toggle button.active {
@@ -296,11 +300,13 @@ body.lang-en [data-lang-content="en"] {
   margin-top: 16px;
   padding-left: 28px;
   border-left: 2px solid var(--color-border);
+  list-style-type: none;
 }
 
 .timeline-item {
   position: relative;
   padding-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .timeline-item:last-child {
@@ -308,7 +314,7 @@ body.lang-en [data-lang-content="en"] {
 }
 
 .timeline-item::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -34px;
   top: 4px;
@@ -329,18 +335,29 @@ body.lang-en [data-lang-content="en"] {
 }
 
 .timeline-item h3 {
-  margin: 0 0 4px;
-  font-size: 1.15rem;
+  margin: 0 0 6px;
+  font-size: 1.4rem;
 }
 
 .timeline-item .subtitle {
   color: var(--color-text-muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 12px;
 }
 
-.project-media {
+.timeline-item p:not(.subtitle) {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.project-media,
+.project-illustration {
   width: 100%;
+  max-width: 340px;
+  margin: 16px auto;
+}
+
+.project-media {
   aspect-ratio: 16 / 9;
   border-radius: var(--radius);
   background: var(--color-surface-alt);
@@ -350,9 +367,33 @@ body.lang-en [data-lang-content="en"] {
   justify-content: center;
   color: var(--color-text-muted);
   font-size: 0.85rem;
-  margin: 12px 0;
   text-align: center;
   padding: 12px;
+}
+
+img.project-media {
+  border-style: solid;
+  object-fit: cover;
+  object-position: top;
+  padding: 0;
+}
+
+.project-illustration {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(135deg, var(--color-surface-alt), var(--color-accent-soft));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+}
+
+.project-illustration svg {
+  width: 30%;
+  min-width: 56px;
+  max-width: 72px;
+  height: auto;
 }
 
 .tech-badges {
@@ -484,7 +525,9 @@ form.contact-form {
   font-weight: 700;
   font-size: 0.95rem;
   cursor: pointer;
-  transition: background var(--transition), transform var(--transition);
+  transition:
+    background var(--transition),
+    transform var(--transition);
   align-self: flex-start;
 }
 
