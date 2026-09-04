@@ -60,19 +60,3 @@ número de WhatsApp em `contato.html`.
 
 Nenhum framework/build tool é necessário — o site é HTML/CSS/JS estático puro, o que também
 simplifica o deploy gratuito em serviços como GitHub Pages, Vercel ou Render.
-
-## Configurar o envio de e-mail (EmailJS)
-
-O formulário de contato usa o [EmailJS](https://www.emailjs.com/) para enviar e-mails
-direto do navegador. Sem configurar suas chaves, o formulário valida os campos mas mostra
-um aviso de que o envio ainda não está disponível.
-
-1. Crie uma conta gratuita em [emailjs.com](https://www.emailjs.com/) (plano free: 200
-   e-mails/mês).
-2. Conecte um serviço de e-mail (Gmail, Outlook, etc.) em **Email Services** — isso gera um
-   **Service ID**.
-3. Crie um template em **Email Templates** com variáveis `{{name}}`, `{{email}}` e
-   `{{message}}` — isso gera um **Template ID**.
-4. Copie sua **Public Key** em **Account → General**.
-5. Cole os três valores em [js/email-config.js](js/email-config.js), no lugar dos
-   placeholders `COLOQUE_AQUI_...`.
