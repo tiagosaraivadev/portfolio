@@ -1,55 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Experiências — Tiago Saraiva</title>
-  <meta name="description" content="Experiências profissionais e acadêmicas de Tiago Saraiva." />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiências — Tiago Saraiva</title>
+    <meta name="description" content="Experiências profissionais e acadêmicas de Tiago Saraiva." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="logo">Tiago<span>.dev</span></a>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">Tiago<span>.dev</span></a>
+        <div class="header-right">
+          <nav class="main-nav" aria-label="Navegação principal">
+            <ul>
+              <li><a href="index.html" data-i18n="nav.sobre">Sobre Mim</a></li>
+              <li><a href="projetos.html" data-i18n="nav.projetos">Projetos</a></li>
+              <li><a href="experiencias.html" data-i18n="nav.experiencias">Experiências</a></li>
+              <li><a href="contato.html" data-i18n="nav.contato">Contato</a></li>
+            </ul>
+          </nav>
 
-      <button class="nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+          <div class="lang-toggle lang-toggle-header" role="group" data-i18n-aria-label="lang.selectLabel">
+            <button data-lang-btn="pt" class="active" type="button">PT</button>
+            <button data-lang-btn="en" type="button">EN</button>
+          </div>
 
-      <nav class="main-nav" aria-label="Navegação principal">
-        <ul>
-          <li><a href="index.html">Sobre Mim</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="experiencias.html">Experiências</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="page-header container">
-      <h1>Experiências</h1>
-      <p>Minha trajetória profissional como desenvolvedor e Engenheiro de Software.</p>
-    </section>
-
-    <section class="section container">
-      <ol class="timeline" id="experiences-timeline"></ol>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <span>&copy; 2026 Tiago Saraiva. Todos os direitos reservados.</span>
-      <div class="footer-social">
-        <a href="mailto:tiago.saraiva165@hotmail.com">E-mail</a>
-        <a href="https://github.com/tiagosaraivadev" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com/in/tiago-saraiva1" target="_blank" rel="noopener">LinkedIn</a>
+          <button class="nav-toggle" data-i18n-aria-label="nav.toggleLabel" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
-    </div>
-  </footer>
+    </header>
 
-  <script src="js/main.js"></script>
-</body>
+    <main>
+      <section class="page-header container">
+        <h1 data-i18n="experiencias.title">Experiências</h1>
+        <p data-i18n="experiencias.subtitle">Minha trajetória profissional como desenvolvedor e Engenheiro de Software.</p>
+      </section>
+
+      <section class="section container">
+        <ol class="timeline" id="experiences-timeline"></ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span data-i18n="footer.copyright">&copy; 2026 Tiago Saraiva. Todos os direitos reservados.</span>
+        <div class="footer-social">
+          <a href="mailto:tiago.saraiva165@hotmail.com" data-i18n="footer.email">E-mail</a>
+          <a href="https://github.com/tiagosaraivadev" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/tiago-saraiva1" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

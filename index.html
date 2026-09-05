@@ -15,93 +15,56 @@
       <div class="container">
         <a href="index.html" class="logo">Tiago<span>.dev</span></a>
 
-        <button
-          class="nav-toggle"
-          aria-label="Abrir menu de navegação"
-          aria-expanded="false"
-        >
-          <span></span><span></span><span></span>
-        </button>
+        <div class="header-right">
+          <nav class="main-nav" aria-label="Navegação principal">
+            <ul>
+              <li><a href="index.html" data-i18n="nav.sobre">Sobre Mim</a></li>
+              <li><a href="projetos.html" data-i18n="nav.projetos">Projetos</a></li>
+              <li><a href="experiencias.html" data-i18n="nav.experiencias">Experiências</a></li>
+              <li><a href="contato.html" data-i18n="nav.contato">Contato</a></li>
+            </ul>
+          </nav>
 
-        <nav class="main-nav" aria-label="Navegação principal">
-          <ul>
-            <li><a href="index.html">Sobre Mim</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="experiencias.html">Experiências</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
+          <div class="lang-toggle lang-toggle-header" role="group" data-i18n-aria-label="lang.selectLabel">
+            <button data-lang-btn="pt" class="active" type="button">PT</button>
+            <button data-lang-btn="en" type="button">EN</button>
+          </div>
+
+          <button class="nav-toggle" data-i18n-aria-label="nav.toggleLabel" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="page-header container">
-        <h1>Sobre Mim</h1>
-        <p>Um pouco da minha trajetória, formação e objetivos profissionais.</p>
-
-        <div class="lang-toggle" role="group" aria-label="Selecionar idioma">
-          <button data-lang-btn="pt" class="active" type="button">PT</button>
-          <button data-lang-btn="en" type="button">EN</button>
-        </div>
+        <h1 data-i18n="about.title">Sobre Mim</h1>
+        <p data-i18n="about.subtitle">Um pouco da minha trajetória, formação e objetivos profissionais.</p>
       </section>
 
       <section class="section container">
         <div class="card about-grid">
-          <div data-lang-content="pt">
-            <p>
-              Olá! Eu sou o <strong>Tiago Saraiva</strong>, Engenheiro de
-              Software Pleno atualmente na <strong>Wabtec Corporation</strong>,
-              com sólida experiência no desenvolvimento de sistemas distribuídos
-              e aplicações web de alta escala. Sou especialista no ecossistema
-              <strong>.NET Core</strong>, com foco na criação de microsserviços
-              e APIs REST integrados a interfaces modernas em ReactJS.
-            </p>
-            <p>
-              Tenho domínio em SQL Server, com ênfase em modelagem relacional e
-              otimização de performance, além de experiência em ambientes ágeis
-              e cultura DevOps, gerenciando pipelines de CI/CD via Azure DevOps.
-              Também curso Engenharia de Software na PUC Minas, e este portfólio
-              reúne meus projetos, experiências e formas de contato.
-            </p>
-          </div>
-
-          <div data-lang-content="en">
-            <p>
-              Hi! I'm <strong>Tiago Saraiva</strong>, a Mid-level Software
-              Engineer currently at <strong>Wabtec Corporation</strong>, with
-              solid experience building distributed systems and high-scale web
-              applications. I specialize in the
-              <strong>.NET Core</strong> ecosystem, focused on building
-              microservices and REST APIs integrated with modern ReactJS
-              interfaces.
-            </p>
-            <p>
-              I have strong SQL Server skills, with an emphasis on relational
-              modeling and performance optimization, along with experience in
-              agile environments and DevOps culture, managing CI/CD pipelines
-              through Azure DevOps. I'm also studying Software Engineering at
-              PUC Minas, and this portfolio gathers my projects, experience and
-              contact information.
-            </p>
-          </div>
+          <div data-i18n="about.bio"></div>
 
           <div class="about-facts">
             <div class="fact">
-              <strong>Formação</strong>
-              Engenharia de Software — PUC Minas (2022–2027)
+              <strong data-i18n="about.formacao.label">Formação</strong>
+              <span data-i18n="about.formacao.value">Engenharia de Software — PUC Minas (2022–2027)</span>
             </div>
             <div class="fact">
-              <strong>Área de atuação</strong>
-              Engenheiro de Software Pleno — .NET Core &amp; ReactJS
+              <strong data-i18n="about.area.label">Área de atuação</strong>
+              <span data-i18n="about.area.value">Engenheiro de Software Pleno — .NET Core &amp; ReactJS</span>
             </div>
             <div class="fact">
-              <strong>Interesses</strong>
-              Sistemas distribuídos, microsserviços, APIs REST
+              <strong data-i18n="about.interesses.label">Interesses</strong>
+              <span data-i18n="about.interesses.value">Sistemas distribuídos, microsserviços, APIs REST</span>
             </div>
             <div class="fact">
-              <strong>Objetivo</strong>
-              Evoluir como Engenheiro de Software, aprofundando atuação em
-              arquitetura de sistemas distribuídos
+              <strong data-i18n="about.objetivo.label">Objetivo</strong>
+              <span data-i18n="about.objetivo.value"
+                >Evoluir como Engenheiro de Software, aprofundando atuação em arquitetura de sistemas distribuídos</span
+              >
             </div>
           </div>
         </div>
@@ -110,21 +73,11 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <span>&copy; 2026 Tiago Saraiva. Todos os direitos reservados.</span>
+        <span data-i18n="footer.copyright">&copy; 2026 Tiago Saraiva. Todos os direitos reservados.</span>
         <div class="footer-social">
-          <a href="mailto:tiago.saraiva165@hotmail.com">E-mail</a>
-          <a
-            href="https://github.com/tiagosaraivadev"
-            target="_blank"
-            rel="noopener"
-            >GitHub</a
-          >
-          <a
-            href="https://linkedin.com/in/tiago-saraiva1"
-            target="_blank"
-            rel="noopener"
-            >LinkedIn</a
-          >
+          <a href="mailto:tiago.saraiva165@hotmail.com" data-i18n="footer.email">E-mail</a>
+          <a href="https://github.com/tiagosaraivadev" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/tiago-saraiva1" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
     </footer>

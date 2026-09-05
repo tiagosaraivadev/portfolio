@@ -15,41 +15,43 @@
       <div class="container">
         <a href="index.html" class="logo">Tiago<span>.dev</span></a>
 
-        <button
-          class="nav-toggle"
-          aria-label="Abrir menu de navegação"
-          aria-expanded="false"
-        >
-          <span></span><span></span><span></span>
-        </button>
+        <div class="header-right">
+          <nav class="main-nav" aria-label="Navegação principal">
+            <ul>
+              <li><a href="index.html" data-i18n="nav.sobre">Sobre Mim</a></li>
+              <li><a href="projetos.html" data-i18n="nav.projetos">Projetos</a></li>
+              <li><a href="experiencias.html" data-i18n="nav.experiencias">Experiências</a></li>
+              <li><a href="contato.html" data-i18n="nav.contato">Contato</a></li>
+            </ul>
+          </nav>
 
-        <nav class="main-nav" aria-label="Navegação principal">
-          <ul>
-            <li><a href="index.html">Sobre Mim</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="experiencias.html">Experiências</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
+          <div class="lang-toggle lang-toggle-header" role="group" data-i18n-aria-label="lang.selectLabel">
+            <button data-lang-btn="pt" class="active" type="button">PT</button>
+            <button data-lang-btn="en" type="button">EN</button>
+          </div>
+
+          <button class="nav-toggle" data-i18n-aria-label="nav.toggleLabel" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="page-header container">
-        <h1>Contato</h1>
-        <p>
-          Fique à vontade para entrar em contato por qualquer um dos canais
-          abaixo.
+        <h1 data-i18n="contato.title">Contato</h1>
+        <p data-i18n="contato.subtitle">
+          Fique à vontade para entrar em contato por qualquer um dos canais abaixo.
         </p>
       </section>
 
       <section class="section container">
         <div class="contact-grid">
           <div class="card">
-            <h2>Canais diretos</h2>
+            <h2 data-i18n="contato.canaisDiretos">Canais diretos</h2>
             <div class="contact-icons">
               <a href="mailto:tiago.saraiva165@hotmail.com">
-                <span class="icon">✉️</span> E-mail
+                <span class="icon">✉️</span> <span data-i18n="contato.iconEmail">E-mail</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/tiago-saraiva1/"
@@ -69,45 +71,48 @@
           </div>
 
           <div class="card">
-            <h2>Envie uma mensagem</h2>
+            <h2 data-i18n="contato.enviarMensagem">Envie uma mensagem</h2>
             <form class="contact-form" novalidate>
               <div class="form-field">
-                <label for="name">Nome</label>
+                <label for="name" data-i18n="contato.labelNome">Nome</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
+                  data-i18n-placeholder="contato.placeholderNome"
                   placeholder="Seu nome"
                   required
                 />
-                <span class="error">Informe seu nome.</span>
+                <span class="error" data-i18n="contato.errorNome">Informe seu nome.</span>
               </div>
 
               <div class="form-field">
-                <label for="email">E-mail</label>
+                <label for="email" data-i18n="contato.labelEmail">E-mail</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
+                  data-i18n-placeholder="contato.placeholderEmail"
                   placeholder="voce@exemplo.com"
                   required
                 />
-                <span class="error">Informe um e-mail válido.</span>
+                <span class="error" data-i18n="contato.errorEmail">Informe um e-mail válido.</span>
               </div>
 
               <div class="form-field">
-                <label for="message">Mensagem</label>
+                <label for="message" data-i18n="contato.labelMensagem">Mensagem</label>
                 <textarea
                   id="message"
                   name="message"
                   rows="5"
+                  data-i18n-placeholder="contato.placeholderMensagem"
                   placeholder="Sua mensagem"
                   required
                 ></textarea>
-                <span class="error">Escreva uma mensagem.</span>
+                <span class="error" data-i18n="contato.errorMensagem">Escreva uma mensagem.</span>
               </div>
 
-              <button type="submit" class="btn">Enviar mensagem</button>
+              <button type="submit" class="btn" data-i18n="contato.btnEnviar">Enviar mensagem</button>
               <p class="form-status" role="status"></p>
             </form>
           </div>
@@ -117,9 +122,9 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <span>&copy; 2026 Tiago Saraiva. Todos os direitos reservados.</span>
+        <span data-i18n="footer.copyright">&copy; 2026 Tiago Saraiva. Todos os direitos reservados.</span>
         <div class="footer-social">
-          <a href="mailto:tiago.saraiva165@hotmail.com">E-mail</a>
+          <a href="mailto:tiago.saraiva165@hotmail.com" data-i18n="footer.email">E-mail</a>
           <a
             href="https://github.com/tiagosaraivadev"
             target="_blank"

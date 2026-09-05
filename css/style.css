@@ -104,6 +104,12 @@ ul {
   width: 100%;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .logo {
   font-weight: 700;
   font-size: 1.15rem;
@@ -255,16 +261,13 @@ main {
   color: #fff;
 }
 
-[data-lang-content="en"] {
-  display: none;
+.lang-toggle-header {
+  margin-bottom: 0;
 }
 
-body.lang-en [data-lang-content="pt"] {
-  display: none;
-}
-
-body.lang-en [data-lang-content="en"] {
-  display: block;
+.lang-toggle-header button {
+  padding: 4px 10px;
+  font-size: 0.75rem;
 }
 
 .about-grid {
