@@ -25,7 +25,7 @@ const translations = {
     'about.objetivo.value': 'Evoluir como Engenheiro de Software, aprofundando atuação em arquitetura de sistemas distribuídos',
 
     'projetos.title': 'Projetos',
-    'projetos.subtitle': 'Linha do tempo dos meus projetos, do mais antigo ao mais recente.',
+    'projetos.subtitle': 'Linha do tempo dos meus projetos, do mais recente ao mais antigo.',
     'projetos.repoLink': 'Repositório no GitHub',
 
     'experiencias.title': 'Experiências',
@@ -78,7 +78,7 @@ const translations = {
     'about.objetivo.value': 'Grow as a Software Engineer, deepening my work in distributed systems architecture',
 
     'projetos.title': 'Projects',
-    'projetos.subtitle': 'Timeline of my projects, from oldest to most recent.',
+    'projetos.subtitle': 'Timeline of my projects, from most recent to oldest.',
     'projetos.repoLink': 'GitHub Repository',
 
     'experiencias.title': 'Experience',
@@ -153,59 +153,15 @@ const projectIcons = {
 
 const projectsData = [
   {
-    period: '2021',
-    name: { pt: 'Saraiva Viagens', en: 'Saraiva Viagens' },
+    period: '2026',
+    name: { pt: 'Este Portfólio', en: 'This Portfolio' },
     description: {
-      pt: 'Site institucional de uma agência de viagens fictícia, criado como atividade prática do curso Recode Pro. Desenvolvido inteiramente em HTML e CSS puro, sem frameworks, com páginas de destinos, promoções e contato — meu primeiro contato prático com estruturação de layout e design responsivo na web.',
-      en: 'Corporate website for a fictional travel agency, built as a hands-on project for the Recode Pro course. Developed entirely in plain HTML and CSS, with pages for destinations, promotions and contact — my first hands-on experience structuring web layout and responsive design.',
+      pt: 'Este próprio site de portfólio profissional, desenvolvido para a disciplina de Projeto de Software da Engenharia de Software (PUC Minas). Construído em HTML, CSS e JavaScript puros, com navegação entre seções, timelines dinâmicas de projetos e experiências, e formulário de contato funcional integrado ao EmailJS.',
+      en: 'This very professional portfolio website, built for the Software Project course in the Software Engineering program (PUC Minas). Built with plain HTML, CSS and JavaScript, featuring section navigation, dynamic project and experience timelines, and a working contact form integrated with EmailJS.',
     },
-    image: 'saraiva-viagens.png',
-    techs: { pt: ['HTML', 'CSS'], en: ['HTML', 'CSS'] },
-    repo: 'https://github.com/tiagosaraivadev/Saraiva-Viagens',
-  },
-  {
-    period: '2022',
-    name: { pt: 'API de Filmes', en: 'Movie API' },
-    description: {
-      pt: 'Interface web para busca e exibição de filmes em cartaz e lançamentos, consumindo uma API pública de filmes. Desenvolvida como atividade prática da disciplina de Desenvolvimento de Interfaces Web, aplicando manipulação do DOM, requisições assíncronas e renderização dinâmica de conteúdo em JavaScript puro.',
-      en: 'Web interface for searching and displaying now-showing and upcoming movies, consuming a public movie API. Built as a hands-on activity for the Web Interface Development course, applying DOM manipulation, async requests and dynamic content rendering in plain JavaScript.',
-    },
-    illustration: 'film',
-    techs: { pt: ['JavaScript'], en: ['JavaScript'] },
-    repo: 'https://github.com/tiagosaraivadev/api-filmes',
-  },
-  {
-    period: '2023',
-    name: { pt: 'Gerenciamento de Biblioteca', en: 'Library Management' },
-    description: {
-      pt: 'Sistema de gerenciamento de biblioteca desenvolvido em Java, simulando o cadastro de itens e o controle de empréstimos. O projeto aplica conceitos de Programação Orientada a Objetos — interfaces e classes abstratas — para modelar diferentes tipos de usuários e materiais de forma extensível.',
-      en: 'Library management system built in Java, simulating item registration and loan control. The project applies Object-Oriented Programming concepts — interfaces and abstract classes — to model different types of users and materials in an extensible way.',
-    },
-    illustration: 'library',
-    techs: { pt: ['Java', 'POO'], en: ['Java', 'OOP'] },
-    repo: 'https://github.com/tiagosaraivadev/gerenciamentoBiblioteca',
-  },
-  {
-    period: '2024',
-    name: { pt: 'To-Do List', en: 'To-Do List' },
-    description: {
-      pt: 'Aplicação de lista de tarefas desenvolvida em Java como exercício prático da disciplina de Laboratório de Desenvolvimento de Software, no curso de Engenharia de Software. Implementa criação, conclusão e remoção de tarefas, reforçando fundamentos de lógica de programação e estruturas de dados.',
-      en: 'To-do list application built in Java as a hands-on exercise for the Software Development Laboratory course, part of the Software Engineering program. Implements creating, completing and removing tasks, reinforcing programming logic and data structure fundamentals.',
-    },
-    illustration: 'checklist',
-    techs: { pt: ['Java'], en: ['Java'] },
-    repo: 'https://github.com/tiagosaraivadev/to-do-list',
-  },
-  {
-    period: '2025',
-    name: { pt: 'Round API', en: 'Round API' },
-    description: {
-      pt: 'API REST em Python que centraliza dados e estatísticas de partidas de Counter-Strike, o cenário competitivo de esports do jogo. Pensada para ser consumida por outras aplicações que precisem exibir informações de rounds, mapas e desempenho de times sem depender diretamente das fontes originais dos dados.',
-      en: "REST API in Python that centralizes Counter-Strike match data and statistics, the game's competitive esports scene. Designed to be consumed by other applications that need to display round, map and team performance information without depending directly on the original data sources.",
-    },
-    illustration: 'api',
-    techs: { pt: ['Python', 'API REST'], en: ['Python', 'REST API'] },
-    repo: 'https://github.com/tiagosaraivadev/round-api',
+    image: 'portfolio.png',
+    techs: { pt: ['HTML', 'CSS', 'JavaScript'], en: ['HTML', 'CSS', 'JavaScript'] },
+    repo: 'https://github.com/tiagosaraivadev/portfolio',
   },
   {
     period: '2026',
@@ -219,15 +175,59 @@ const projectsData = [
     repo: 'https://github.com/tiagosaraivadev/GoodHamburguer',
   },
   {
-    period: '2026',
-    name: { pt: 'Este Portfólio', en: 'This Portfolio' },
+    period: '2025',
+    name: { pt: 'Round API', en: 'Round API' },
     description: {
-      pt: 'Este próprio site de portfólio profissional, desenvolvido para a disciplina de Projeto de Software da Engenharia de Software (PUC Minas). Construído em HTML, CSS e JavaScript puros, com navegação entre seções, timelines dinâmicas de projetos e experiências, e formulário de contato funcional integrado ao EmailJS.',
-      en: 'This very professional portfolio website, built for the Software Project course in the Software Engineering program (PUC Minas). Built with plain HTML, CSS and JavaScript, featuring section navigation, dynamic project and experience timelines, and a working contact form integrated with EmailJS.',
+      pt: 'API REST em Python que centraliza dados e estatísticas de partidas de Counter-Strike, o cenário competitivo de esports do jogo. Pensada para ser consumida por outras aplicações que precisem exibir informações de rounds, mapas e desempenho de times sem depender diretamente das fontes originais dos dados.',
+      en: "REST API in Python that centralizes Counter-Strike match data and statistics, the game's competitive esports scene. Designed to be consumed by other applications that need to display round, map and team performance information without depending directly on the original data sources.",
     },
-    image: 'portfolio.png',
-    techs: { pt: ['HTML', 'CSS', 'JavaScript'], en: ['HTML', 'CSS', 'JavaScript'] },
-    repo: 'https://github.com/tiagosaraivadev/portfolio',
+    illustration: 'api',
+    techs: { pt: ['Python', 'API REST'], en: ['Python', 'REST API'] },
+    repo: 'https://github.com/tiagosaraivadev/round-api',
+  },
+  {
+    period: '2024',
+    name: { pt: 'To-Do List', en: 'To-Do List' },
+    description: {
+      pt: 'Aplicação de lista de tarefas desenvolvida em Java como exercício prático da disciplina de Laboratório de Desenvolvimento de Software, no curso de Engenharia de Software. Implementa criação, conclusão e remoção de tarefas, reforçando fundamentos de lógica de programação e estruturas de dados.',
+      en: 'To-do list application built in Java as a hands-on exercise for the Software Development Laboratory course, part of the Software Engineering program. Implements creating, completing and removing tasks, reinforcing programming logic and data structure fundamentals.',
+    },
+    illustration: 'checklist',
+    techs: { pt: ['Java'], en: ['Java'] },
+    repo: 'https://github.com/tiagosaraivadev/to-do-list',
+  },
+  {
+    period: '2023',
+    name: { pt: 'Gerenciamento de Biblioteca', en: 'Library Management' },
+    description: {
+      pt: 'Sistema de gerenciamento de biblioteca desenvolvido em Java, simulando o cadastro de itens e o controle de empréstimos. O projeto aplica conceitos de Programação Orientada a Objetos — interfaces e classes abstratas — para modelar diferentes tipos de usuários e materiais de forma extensível.',
+      en: 'Library management system built in Java, simulating item registration and loan control. The project applies Object-Oriented Programming concepts — interfaces and abstract classes — to model different types of users and materials in an extensible way.',
+    },
+    illustration: 'library',
+    techs: { pt: ['Java', 'POO'], en: ['Java', 'OOP'] },
+    repo: 'https://github.com/tiagosaraivadev/gerenciamentoBiblioteca',
+  },
+  {
+    period: '2022',
+    name: { pt: 'API de Filmes', en: 'Movie API' },
+    description: {
+      pt: 'Interface web para busca e exibição de filmes em cartaz e lançamentos, consumindo uma API pública de filmes. Desenvolvida como atividade prática da disciplina de Desenvolvimento de Interfaces Web, aplicando manipulação do DOM, requisições assíncronas e renderização dinâmica de conteúdo em JavaScript puro.',
+      en: 'Web interface for searching and displaying now-showing and upcoming movies, consuming a public movie API. Built as a hands-on activity for the Web Interface Development course, applying DOM manipulation, async requests and dynamic content rendering in plain JavaScript.',
+    },
+    illustration: 'film',
+    techs: { pt: ['JavaScript'], en: ['JavaScript'] },
+    repo: 'https://github.com/tiagosaraivadev/api-filmes',
+  },
+  {
+    period: '2021',
+    name: { pt: 'Saraiva Viagens', en: 'Saraiva Viagens' },
+    description: {
+      pt: 'Site institucional de uma agência de viagens fictícia, criado como atividade prática do curso Recode Pro. Desenvolvido inteiramente em HTML e CSS puro, sem frameworks, com páginas de destinos, promoções e contato — meu primeiro contato prático com estruturação de layout e design responsivo na web.',
+      en: 'Corporate website for a fictional travel agency, built as a hands-on project for the Recode Pro course. Developed entirely in plain HTML and CSS, with pages for destinations, promotions and contact — my first hands-on experience structuring web layout and responsive design.',
+    },
+    image: 'saraiva-viagens.png',
+    techs: { pt: ['HTML', 'CSS'], en: ['HTML', 'CSS'] },
+    repo: 'https://github.com/tiagosaraivadev/Saraiva-Viagens',
   },
 ];
 

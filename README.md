@@ -16,7 +16,7 @@ quatro seções acessadas por um menu de navegação. Todo o conteúdo (nav, tex
 Projetos/Experiências e formulário) tem toggle **PT/EN** no cabeçalho, disponível nas 4 páginas:
 
 - **Sobre Mim** — apresentação profissional, formação e objetivos.
-- **Projetos** — linha do tempo de projetos, do mais antigo ao mais recente.
+- **Projetos** — linha do tempo de projetos, do mais recente ao mais antigo.
 - **Experiências** — trajetória profissional, do vínculo mais recente ao mais antigo.
 - **Contato** — ícones para e-mail/LinkedIn/GitHub e formulário de contato funcional.
 
