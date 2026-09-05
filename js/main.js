@@ -154,17 +154,6 @@ const projectIcons = {
 const projectsData = [
   {
     period: '2026',
-    name: { pt: 'Este Portfólio', en: 'This Portfolio' },
-    description: {
-      pt: 'Este próprio site de portfólio profissional, desenvolvido para a disciplina de Projeto de Software da Engenharia de Software (PUC Minas). Construído em HTML, CSS e JavaScript puros, com navegação entre seções, timelines dinâmicas de projetos e experiências, e formulário de contato funcional integrado ao EmailJS.',
-      en: 'This very professional portfolio website, built for the Software Project course in the Software Engineering program (PUC Minas). Built with plain HTML, CSS and JavaScript, featuring section navigation, dynamic project and experience timelines, and a working contact form integrated with EmailJS.',
-    },
-    image: 'portfolio.png',
-    techs: { pt: ['HTML', 'CSS', 'JavaScript'], en: ['HTML', 'CSS', 'JavaScript'] },
-    repo: 'https://github.com/tiagosaraivadev/portfolio',
-  },
-  {
-    period: '2026',
     name: { pt: 'Good Hamburguer', en: 'Good Hamburguer' },
     description: {
       pt: 'Sistema de gestão de pedidos para uma hamburgueria, com back-end em ASP.NET Core expondo uma API REST e front-end em Blazor WebAssembly. Implementa regras de precificação e desconto conforme a combinação de itens do pedido — um clássico desafio de lógica de negócio usado em processos seletivos da área.',
