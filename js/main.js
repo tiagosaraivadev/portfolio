@@ -1,3 +1,118 @@
+const translations = {
+  pt: {
+    'nav.sobre': 'Sobre Mim',
+    'nav.projetos': 'Projetos',
+    'nav.experiencias': 'Experiências',
+    'nav.contato': 'Contato',
+    'nav.toggleLabel': 'Abrir menu de navegação',
+    'lang.selectLabel': 'Selecionar idioma',
+    'footer.copyright': '&copy; 2026 Tiago Saraiva. Todos os direitos reservados.',
+    'footer.email': 'E-mail',
+
+    'about.title': 'Sobre Mim',
+    'about.subtitle': 'Um pouco da minha trajetória, formação e objetivos profissionais.',
+    'about.bio': `
+      <p>Olá! Eu sou o <strong>Tiago Saraiva</strong>, Engenheiro de Software Pleno atualmente na <strong>Wabtec Corporation</strong>, com sólida experiência no desenvolvimento de sistemas distribuídos e aplicações web de alta escala. Sou especialista no ecossistema <strong>.NET Core</strong>, com foco na criação de microsserviços e APIs REST integrados a interfaces modernas em ReactJS.</p>
+      <p>Tenho domínio em SQL Server, com ênfase em modelagem relacional e otimização de performance, além de experiência em ambientes ágeis e cultura DevOps, gerenciando pipelines de CI/CD via Azure DevOps. Também curso Engenharia de Software na PUC Minas, e este portfólio reúne meus projetos, experiências e formas de contato.</p>
+    `,
+    'about.formacao.label': 'Formação',
+    'about.formacao.value': 'Engenharia de Software — PUC Minas (2022–2027)',
+    'about.area.label': 'Área de atuação',
+    'about.area.value': 'Engenheiro de Software Pleno — .NET Core &amp; ReactJS',
+    'about.interesses.label': 'Interesses',
+    'about.interesses.value': 'Sistemas distribuídos, microsserviços, APIs REST',
+    'about.objetivo.label': 'Objetivo',
+    'about.objetivo.value': 'Evoluir como Engenheiro de Software, aprofundando atuação em arquitetura de sistemas distribuídos',
+
+    'projetos.title': 'Projetos',
+    'projetos.subtitle': 'Linha do tempo dos meus projetos, do mais antigo ao mais recente.',
+    'projetos.repoLink': 'Repositório no GitHub',
+
+    'experiencias.title': 'Experiências',
+    'experiencias.subtitle': 'Minha trajetória profissional como desenvolvedor e Engenheiro de Software.',
+
+    'contato.title': 'Contato',
+    'contato.subtitle': 'Fique à vontade para entrar em contato por qualquer um dos canais abaixo.',
+    'contato.canaisDiretos': 'Canais diretos',
+    'contato.enviarMensagem': 'Envie uma mensagem',
+    'contato.iconEmail': 'E-mail',
+    'contato.labelNome': 'Nome',
+    'contato.labelEmail': 'E-mail',
+    'contato.labelMensagem': 'Mensagem',
+    'contato.placeholderNome': 'Seu nome',
+    'contato.placeholderEmail': 'voce@exemplo.com',
+    'contato.placeholderMensagem': 'Sua mensagem',
+    'contato.errorNome': 'Informe seu nome.',
+    'contato.errorEmail': 'Informe um e-mail válido.',
+    'contato.errorMensagem': 'Escreva uma mensagem.',
+    'contato.btnEnviar': 'Enviar mensagem',
+    'contato.btnEnviando': 'Enviando...',
+    'contato.statusInvalid': 'Verifique os campos destacados antes de enviar.',
+    'contato.statusNotConfigured': 'Envio de e-mail ainda não configurado (veja js/email-config.js).',
+    'contato.statusSuccess': 'Mensagem enviada com sucesso! Obrigado pelo contato.',
+    'contato.statusError': 'Não foi possível enviar agora. Tente novamente ou use o e-mail direto.',
+  },
+  en: {
+    'nav.sobre': 'About Me',
+    'nav.projetos': 'Projects',
+    'nav.experiencias': 'Experience',
+    'nav.contato': 'Contact',
+    'nav.toggleLabel': 'Open navigation menu',
+    'lang.selectLabel': 'Select language',
+    'footer.copyright': '&copy; 2026 Tiago Saraiva. All rights reserved.',
+    'footer.email': 'Email',
+
+    'about.title': 'About Me',
+    'about.subtitle': 'A little about my background, education and professional goals.',
+    'about.bio': `
+      <p>Hi! I'm <strong>Tiago Saraiva</strong>, a Mid-level Software Engineer currently at <strong>Wabtec Corporation</strong>, with solid experience building distributed systems and high-scale web applications. I specialize in the <strong>.NET Core</strong> ecosystem, focused on building microservices and REST APIs integrated with modern ReactJS interfaces.</p>
+      <p>I have strong SQL Server skills, with an emphasis on relational modeling and performance optimization, along with experience in agile environments and DevOps culture, managing CI/CD pipelines through Azure DevOps. I'm also studying Software Engineering at PUC Minas, and this portfolio gathers my projects, experience and contact information.</p>
+    `,
+    'about.formacao.label': 'Education',
+    'about.formacao.value': 'Software Engineering — PUC Minas (2022–2027)',
+    'about.area.label': 'Current Role',
+    'about.area.value': 'Mid-level Software Engineer — .NET Core &amp; ReactJS',
+    'about.interesses.label': 'Interests',
+    'about.interesses.value': 'Distributed systems, microservices, REST APIs',
+    'about.objetivo.label': 'Goal',
+    'about.objetivo.value': 'Grow as a Software Engineer, deepening my work in distributed systems architecture',
+
+    'projetos.title': 'Projects',
+    'projetos.subtitle': 'Timeline of my projects, from oldest to most recent.',
+    'projetos.repoLink': 'GitHub Repository',
+
+    'experiencias.title': 'Experience',
+    'experiencias.subtitle': 'My professional journey as a developer and Software Engineer.',
+
+    'contato.title': 'Contact',
+    'contato.subtitle': 'Feel free to reach out through any of the channels below.',
+    'contato.canaisDiretos': 'Direct channels',
+    'contato.enviarMensagem': 'Send a message',
+    'contato.iconEmail': 'Email',
+    'contato.labelNome': 'Name',
+    'contato.labelEmail': 'Email',
+    'contato.labelMensagem': 'Message',
+    'contato.placeholderNome': 'Your name',
+    'contato.placeholderEmail': 'you@example.com',
+    'contato.placeholderMensagem': 'Your message',
+    'contato.errorNome': 'Please enter your name.',
+    'contato.errorEmail': 'Please enter a valid email.',
+    'contato.errorMensagem': 'Please write a message.',
+    'contato.btnEnviar': 'Send message',
+    'contato.btnEnviando': 'Sending...',
+    'contato.statusInvalid': 'Please check the highlighted fields before sending.',
+    'contato.statusNotConfigured': 'Email sending not configured yet (see js/email-config.js).',
+    'contato.statusSuccess': 'Message sent successfully! Thanks for reaching out.',
+    'contato.statusError': "Couldn't send right now. Please try again or email me directly.",
+  },
+};
+
+let currentLang = localStorage.getItem('portfolio-lang') === 'en' ? 'en' : 'pt';
+
+function t(key) {
+  return translations[currentLang]?.[key] ?? translations.pt[key] ?? key;
+}
+
 const projectIcons = {
   library: `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <rect x="10" y="14" width="10" height="38" rx="1"/>
@@ -39,86 +154,119 @@ const projectIcons = {
 const projectsData = [
   {
     period: '2021',
-    name: 'Saraiva Viagens',
-    description: 'Site institucional de uma agência de viagens fictícia, criado como atividade prática do curso Recode Pro. Desenvolvido inteiramente em HTML e CSS puro, sem frameworks, com páginas de destinos, promoções e contato — meu primeiro contato prático com estruturação de layout e design responsivo na web.',
+    name: { pt: 'Saraiva Viagens', en: 'Saraiva Viagens' },
+    description: {
+      pt: 'Site institucional de uma agência de viagens fictícia, criado como atividade prática do curso Recode Pro. Desenvolvido inteiramente em HTML e CSS puro, sem frameworks, com páginas de destinos, promoções e contato — meu primeiro contato prático com estruturação de layout e design responsivo na web.',
+      en: 'Corporate website for a fictional travel agency, built as a hands-on project for the Recode Pro course. Developed entirely in plain HTML and CSS, with pages for destinations, promotions and contact — my first hands-on experience structuring web layout and responsive design.',
+    },
     image: 'saraiva-viagens.png',
-    techs: ['HTML', 'CSS'],
+    techs: { pt: ['HTML', 'CSS'], en: ['HTML', 'CSS'] },
     repo: 'https://github.com/tiagosaraivadev/Saraiva-Viagens',
   },
   {
     period: '2022',
-    name: 'API de Filmes',
-    description: 'Interface web para busca e exibição de filmes em cartaz e lançamentos, consumindo uma API pública de filmes. Desenvolvida como atividade prática da disciplina de Desenvolvimento de Interfaces Web, aplicando manipulação do DOM, requisições assíncronas e renderização dinâmica de conteúdo em JavaScript puro.',
+    name: { pt: 'API de Filmes', en: 'Movie API' },
+    description: {
+      pt: 'Interface web para busca e exibição de filmes em cartaz e lançamentos, consumindo uma API pública de filmes. Desenvolvida como atividade prática da disciplina de Desenvolvimento de Interfaces Web, aplicando manipulação do DOM, requisições assíncronas e renderização dinâmica de conteúdo em JavaScript puro.',
+      en: 'Web interface for searching and displaying now-showing and upcoming movies, consuming a public movie API. Built as a hands-on activity for the Web Interface Development course, applying DOM manipulation, async requests and dynamic content rendering in plain JavaScript.',
+    },
     illustration: 'film',
-    techs: ['JavaScript'],
+    techs: { pt: ['JavaScript'], en: ['JavaScript'] },
     repo: 'https://github.com/tiagosaraivadev/api-filmes',
   },
   {
     period: '2023',
-    name: 'Gerenciamento de Biblioteca',
-    description: 'Sistema de gerenciamento de biblioteca desenvolvido em Java, simulando o cadastro de itens e o controle de empréstimos. O projeto aplica conceitos de Programação Orientada a Objetos — interfaces e classes abstratas — para modelar diferentes tipos de usuários e materiais de forma extensível.',
+    name: { pt: 'Gerenciamento de Biblioteca', en: 'Library Management' },
+    description: {
+      pt: 'Sistema de gerenciamento de biblioteca desenvolvido em Java, simulando o cadastro de itens e o controle de empréstimos. O projeto aplica conceitos de Programação Orientada a Objetos — interfaces e classes abstratas — para modelar diferentes tipos de usuários e materiais de forma extensível.',
+      en: 'Library management system built in Java, simulating item registration and loan control. The project applies Object-Oriented Programming concepts — interfaces and abstract classes — to model different types of users and materials in an extensible way.',
+    },
     illustration: 'library',
-    techs: ['Java', 'POO'],
+    techs: { pt: ['Java', 'POO'], en: ['Java', 'OOP'] },
     repo: 'https://github.com/tiagosaraivadev/gerenciamentoBiblioteca',
   },
   {
     period: '2024',
-    name: 'To-Do List',
-    description: 'Aplicação de lista de tarefas desenvolvida em Java como exercício prático da disciplina de Laboratório de Desenvolvimento de Software, no curso de Engenharia de Software. Implementa criação, conclusão e remoção de tarefas, reforçando fundamentos de lógica de programação e estruturas de dados.',
+    name: { pt: 'To-Do List', en: 'To-Do List' },
+    description: {
+      pt: 'Aplicação de lista de tarefas desenvolvida em Java como exercício prático da disciplina de Laboratório de Desenvolvimento de Software, no curso de Engenharia de Software. Implementa criação, conclusão e remoção de tarefas, reforçando fundamentos de lógica de programação e estruturas de dados.',
+      en: 'To-do list application built in Java as a hands-on exercise for the Software Development Laboratory course, part of the Software Engineering program. Implements creating, completing and removing tasks, reinforcing programming logic and data structure fundamentals.',
+    },
     illustration: 'checklist',
-    techs: ['Java'],
+    techs: { pt: ['Java'], en: ['Java'] },
     repo: 'https://github.com/tiagosaraivadev/to-do-list',
   },
   {
     period: '2025',
-    name: 'Round API',
-    description: 'API REST em Python que centraliza dados e estatísticas de partidas de Counter-Strike, o cenário competitivo de esports do jogo. Pensada para ser consumida por outras aplicações que precisem exibir informações de rounds, mapas e desempenho de times sem depender diretamente das fontes originais dos dados.',
+    name: { pt: 'Round API', en: 'Round API' },
+    description: {
+      pt: 'API REST em Python que centraliza dados e estatísticas de partidas de Counter-Strike, o cenário competitivo de esports do jogo. Pensada para ser consumida por outras aplicações que precisem exibir informações de rounds, mapas e desempenho de times sem depender diretamente das fontes originais dos dados.',
+      en: "REST API in Python that centralizes Counter-Strike match data and statistics, the game's competitive esports scene. Designed to be consumed by other applications that need to display round, map and team performance information without depending directly on the original data sources.",
+    },
     illustration: 'api',
-    techs: ['Python', 'API REST'],
+    techs: { pt: ['Python', 'API REST'], en: ['Python', 'REST API'] },
     repo: 'https://github.com/tiagosaraivadev/round-api',
   },
   {
     period: '2026',
-    name: 'Good Hamburguer',
-    description: 'Sistema de gestão de pedidos para uma hamburgueria, com back-end em ASP.NET Core expondo uma API REST e front-end em Blazor WebAssembly. Implementa regras de precificação e desconto conforme a combinação de itens do pedido — um clássico desafio de lógica de negócio usado em processos seletivos da área.',
+    name: { pt: 'Good Hamburguer', en: 'Good Hamburguer' },
+    description: {
+      pt: 'Sistema de gestão de pedidos para uma hamburgueria, com back-end em ASP.NET Core expondo uma API REST e front-end em Blazor WebAssembly. Implementa regras de precificação e desconto conforme a combinação de itens do pedido — um clássico desafio de lógica de negócio usado em processos seletivos da área.',
+      en: 'Order management system for a burger restaurant, with an ASP.NET Core back-end exposing a REST API and a Blazor WebAssembly front-end. Implements pricing and discount rules based on order item combinations — a classic business logic challenge used in technical interviews.',
+    },
     illustration: 'burger',
-    techs: ['C#', 'ASP.NET Core', 'Blazor WebAssembly'],
+    techs: { pt: ['C#', 'ASP.NET Core', 'Blazor WebAssembly'], en: ['C#', 'ASP.NET Core', 'Blazor WebAssembly'] },
     repo: 'https://github.com/tiagosaraivadev/GoodHamburguer',
   },
   {
     period: '2026',
-    name: 'Este Portfólio',
-    description: 'Este próprio site de portfólio profissional, desenvolvido para a disciplina de Projeto de Software da Engenharia de Software (PUC Minas). Construído em HTML, CSS e JavaScript puros, com navegação entre seções, timelines dinâmicas de projetos e experiências, e formulário de contato funcional integrado ao EmailJS.',
+    name: { pt: 'Este Portfólio', en: 'This Portfolio' },
+    description: {
+      pt: 'Este próprio site de portfólio profissional, desenvolvido para a disciplina de Projeto de Software da Engenharia de Software (PUC Minas). Construído em HTML, CSS e JavaScript puros, com navegação entre seções, timelines dinâmicas de projetos e experiências, e formulário de contato funcional integrado ao EmailJS.',
+      en: 'This very professional portfolio website, built for the Software Project course in the Software Engineering program (PUC Minas). Built with plain HTML, CSS and JavaScript, featuring section navigation, dynamic project and experience timelines, and a working contact form integrated with EmailJS.',
+    },
     image: 'portfolio.png',
-    techs: ['HTML', 'CSS', 'JavaScript'],
+    techs: { pt: ['HTML', 'CSS', 'JavaScript'], en: ['HTML', 'CSS', 'JavaScript'] },
     repo: 'https://github.com/tiagosaraivadev/portfolio',
   },
 ];
 
 const experiencesData = [
   {
-    period: 'Junho de 2026 — Atual',
+    period: { pt: 'Junho de 2026 — Atual', en: 'June 2026 — Present' },
     title: 'Wabtec Corporation',
-    subtitle: 'Engenheiro de Software — Contagem, MG',
-    description: 'Atuação como Engenheiro de Software em sistemas distribuídos e aplicações web de alta escala, no ecossistema .NET Core.',
+    subtitle: { pt: 'Engenheiro de Software — Contagem, MG', en: 'Software Engineer — Contagem, MG' },
+    description: {
+      pt: 'Atuação como Engenheiro de Software em sistemas distribuídos e aplicações web de alta escala, no ecossistema .NET Core.',
+      en: 'Working as a Software Engineer on distributed systems and high-scale web applications within the .NET Core ecosystem.',
+    },
   },
   {
-    period: 'Julho de 2024 — Maio de 2026 (1 ano e 11 meses)',
+    period: { pt: 'Julho de 2024 — Maio de 2026 (1 ano e 11 meses)', en: 'July 2024 — May 2026 (1 year 11 months)' },
     title: 'dti digital',
-    subtitle: 'Engenheiro de Software — Belo Horizonte, MG',
-    description: 'Desenvolvimento de APIs REST e microsserviços em .NET Core, com integração a interfaces em ReactJS e pipelines de CI/CD via Azure DevOps.',
+    subtitle: { pt: 'Engenheiro de Software — Belo Horizonte, MG', en: 'Software Engineer — Belo Horizonte, MG' },
+    description: {
+      pt: 'Desenvolvimento de APIs REST e microsserviços em .NET Core, com integração a interfaces em ReactJS e pipelines de CI/CD via Azure DevOps.',
+      en: 'Development of REST APIs and microservices in .NET Core, integrating ReactJS interfaces and managing CI/CD pipelines via Azure DevOps.',
+    },
   },
   {
-    period: 'Setembro de 2023 — Junho de 2024 (10 meses)',
+    period: { pt: 'Setembro de 2023 — Junho de 2024 (10 meses)', en: 'September 2023 — June 2024 (10 months)' },
     title: 'dti digital',
-    subtitle: 'Desenvolvedor Full Stack — Belo Horizonte, MG',
-    description: 'Desenvolvimento full stack de aplicações web, unindo back-end em .NET Core a interfaces modernas em ReactJS.',
+    subtitle: { pt: 'Desenvolvedor Full Stack — Belo Horizonte, MG', en: 'Full Stack Developer — Belo Horizonte, MG' },
+    description: {
+      pt: 'Desenvolvimento full stack de aplicações web, unindo back-end em .NET Core a interfaces modernas em ReactJS.',
+      en: 'Full stack development of web applications, combining a .NET Core back-end with modern ReactJS interfaces.',
+    },
   },
   {
-    period: 'Junho de 2023 — Agosto de 2023 (3 meses)',
+    period: { pt: 'Junho de 2023 — Agosto de 2023 (3 meses)', en: 'June 2023 — August 2023 (3 months)' },
     title: 'Dottatec Soluções Inteligentes',
-    subtitle: 'Desenvolvedor Full Stack — Nova Lima, MG',
-    description: 'Primeira experiência profissional como desenvolvedor full stack, em projetos de desenvolvimento web.',
+    subtitle: { pt: 'Desenvolvedor Full Stack — Nova Lima, MG', en: 'Full Stack Developer — Nova Lima, MG' },
+    description: {
+      pt: 'Primeira experiência profissional como desenvolvedor full stack, em projetos de desenvolvimento web.',
+      en: 'First professional experience as a full stack developer, working on web development projects.',
+    },
   },
 ];
 
@@ -126,10 +274,35 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   markActiveNavLink();
   initLanguageToggle();
-  renderProjects();
-  renderExperiences();
+  applyLanguage(currentLang);
   initContactForm();
 });
+
+function applyLanguage(lang) {
+  currentLang = lang === 'en' ? 'en' : 'pt';
+  document.documentElement.lang = currentLang === 'en' ? 'en' : 'pt-BR';
+
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    el.innerHTML = t(el.getAttribute('data-i18n'));
+  });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+    el.setAttribute('placeholder', t(el.getAttribute('data-i18n-placeholder')));
+  });
+
+  document.querySelectorAll('[data-i18n-aria-label]').forEach((el) => {
+    el.setAttribute('aria-label', t(el.getAttribute('data-i18n-aria-label')));
+  });
+
+  document.querySelectorAll('[data-lang-btn]').forEach((btn) => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === currentLang);
+  });
+
+  renderProjects();
+  renderExperiences();
+
+  localStorage.setItem('portfolio-lang', currentLang);
+}
 
 function renderProjects() {
   const container = document.getElementById('projects-timeline');
@@ -140,20 +313,20 @@ function renderProjects() {
       (project) => `
     <li class="timeline-item card">
       <span class="period">${project.period}</span>
-      <h3>${project.name}</h3>
-      <p class="subtitle">${project.description}</p>
+      <h3>${project.name[currentLang]}</h3>
+      <p class="subtitle">${project.description[currentLang]}</p>
       ${
         project.image
-          ? `<img class="project-media" src="assets/img/projects/${project.image}" alt="Captura de tela do projeto ${project.name}" loading="lazy" />`
+          ? `<img class="project-media" src="assets/img/projects/${project.image}" alt="${project.name[currentLang]}" loading="lazy" />`
           : project.illustration
           ? `<div class="project-illustration">${projectIcons[project.illustration] || ''}</div>`
-          : `<div class="project-media">${project.media || 'Imagem ou GIF do projeto em funcionamento (placeholder)'}</div>`
+          : `<div class="project-media">${project.media || ''}</div>`
       }
       <div class="tech-badges">
-        ${project.techs.map((tech) => `<span>${tech}</span>`).join('')}
+        ${project.techs[currentLang].map((tech) => `<span>${tech}</span>`).join('')}
       </div>
       <div class="project-links">
-        <a href="${project.repo}" target="_blank" rel="noopener">Repositório no GitHub</a>
+        <a href="${project.repo}" target="_blank" rel="noopener">${t('projetos.repoLink')}</a>
       </div>
     </li>`
     )
@@ -168,10 +341,10 @@ function renderExperiences() {
     .map(
       (exp) => `
     <li class="timeline-item card">
-      <span class="period">${exp.period}</span>
+      <span class="period">${exp.period[currentLang]}</span>
       <h3>${exp.title}</h3>
-      <p class="subtitle">${exp.subtitle}</p>
-      <p>${exp.description}</p>
+      <p class="subtitle">${exp.subtitle[currentLang]}</p>
+      <p>${exp.description[currentLang]}</p>
     </li>`
     )
     .join('');
@@ -212,17 +385,9 @@ function initLanguageToggle() {
 
   buttons.forEach((btn) => {
     btn.addEventListener('click', () => {
-      const lang = btn.getAttribute('data-lang-btn');
-      document.body.classList.toggle('lang-en', lang === 'en');
-      buttons.forEach((b) => b.classList.toggle('active', b === btn));
-      localStorage.setItem('portfolio-lang', lang);
+      applyLanguage(btn.getAttribute('data-lang-btn'));
     });
   });
-
-  const saved = localStorage.getItem('portfolio-lang');
-  if (saved === 'en') {
-    document.querySelector('[data-lang-btn="en"]')?.click();
-  }
 }
 
 function initContactForm() {
@@ -263,7 +428,7 @@ function initContactForm() {
     });
 
     if (!valid) {
-      setStatus('Verifique os campos destacados antes de enviar.', 'error');
+      setStatus(t('contato.statusInvalid'), 'error');
       return;
     }
 
@@ -273,12 +438,14 @@ function initContactForm() {
       !EMAILJS_SERVICE_ID.startsWith('COLOQUE_AQUI');
 
     if (!emailjsReady) {
-      setStatus('Envio de e-mail ainda não configurado (veja js/email-config.js).', 'error');
+      setStatus(t('contato.statusNotConfigured'), 'error');
       return;
     }
 
+    const sendingLabel = t('contato.btnEnviando');
+    const originalLabel = submitBtn.textContent;
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Enviando...';
+    submitBtn.textContent = sendingLabel;
 
     emailjs
       .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
@@ -287,15 +454,15 @@ function initContactForm() {
         message: form.message.value.trim(),
       })
       .then(() => {
-        setStatus('Mensagem enviada com sucesso! Obrigado pelo contato.', 'success');
+        setStatus(t('contato.statusSuccess'), 'success');
         form.reset();
       })
       .catch(() => {
-        setStatus('Não foi possível enviar agora. Tente novamente ou use o e-mail direto.', 'error');
+        setStatus(t('contato.statusError'), 'error');
       })
       .finally(() => {
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Enviar mensagem';
+        submitBtn.textContent = originalLabel;
       });
   });
 }
