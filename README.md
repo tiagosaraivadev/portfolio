@@ -3,17 +3,22 @@
 Website de portfólio profissional desenvolvido para a disciplina **Projeto de Software**
 (Engenharia de Software — PUC Minas), Laboratório 1, Segundo Semestre/2026.
 
-> Projeto em desenvolvimento — entrega atual: **Lab01S02** (implementação das funcionalidades principais).
+> Projeto em desenvolvimento — entrega atual: **Lab01S03** (hospedagem e finalização).
+
+## Site publicado
+
+🔗 **[tiagosaraivadev.github.io/portfolio](https://tiagosaraivadev.github.io/portfolio/)** (GitHub Pages)
 
 ## Sobre o projeto
 
 O site apresenta minha trajetória, habilidades, projetos e formas de contato, organizados em
-quatro seções acessadas por um menu de navegação:
+quatro seções acessadas por um menu de navegação. Todo o conteúdo (nav, textos, timelines de
+Projetos/Experiências e formulário) tem toggle **PT/EN** no cabeçalho, disponível nas 4 páginas:
 
-- **Sobre Mim** — apresentação em português e inglês (com botão de troca de idioma).
+- **Sobre Mim** — apresentação profissional, formação e objetivos.
 - **Projetos** — linha do tempo de projetos, do mais antigo ao mais recente.
 - **Experiências** — trajetória profissional, do vínculo mais recente ao mais antigo.
-- **Contato** — ícones para e-mail/WhatsApp/LinkedIn/GitHub e formulário de contato.
+- **Contato** — ícones para e-mail/LinkedIn/GitHub e formulário de contato funcional.
 
 ## Wireframes
 
@@ -38,8 +43,7 @@ Navegação e layout principal (cabeçalho, rodapé, área de conteúdo) impleme
 funcionando nas 4 páginas, com conteúdo real: bio e experiências profissionais reais, e 7
 projetos reais do GitHub (com screenshot real dos que têm front-end, e ilustração nos que
 não têm). As timelines de Projetos e Experiências são renderizadas dinamicamente via
-JavaScript a partir de um array de dados em `js/main.js`. Único item ainda placeholder: o
-número de WhatsApp em `contato.html`.
+JavaScript a partir de um array de dados bilíngue (PT/EN) em `js/main.js`.
 
 | Sobre Mim                                      | Projetos                                         |
 | ---------------------------------------------- | ------------------------------------------------ |
@@ -53,8 +57,9 @@ número de WhatsApp em `contato.html`.
 
 - **HTML5** — estrutura semântica das páginas.
 - **CSS3** — estilização, layout responsivo (Flexbox/Grid), variáveis de tema.
-- **JavaScript (Vanilla)** — navegação (menu mobile, link ativo), toggle de idioma PT/EN,
-  renderização dinâmica das timelines (Projetos/Experiências) e validação do formulário.
+- **JavaScript (Vanilla)** — navegação (menu mobile, link ativo), sistema de tradução PT/EN
+  em todo o site (dicionário + atributos `data-i18n`), renderização dinâmica das timelines
+  (Projetos/Experiências) e validação do formulário.
 - **[EmailJS](https://www.emailjs.com/)** — envio do formulário de contato direto do
   navegador, sem back-end (carregado via CDN em `contato.html`).
 
